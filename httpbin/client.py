@@ -1,5 +1,5 @@
 import httpx
-from pydantic import BaseModel, BaseSettings, HttpUrl, ValidationError
+from pydantic import BaseModel, BaseSettings, ValidationError
 
 
 # Define custom exceptions
