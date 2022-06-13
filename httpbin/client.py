@@ -27,14 +27,14 @@ class GetResponse(BaseModel):
 
 
 # Define a configuration for the client
-# Purpose: Configs help switching the environments and come in handy for testing
+# Purpose: Configs help switching the environments (e.g. testing)
 class Config(BaseSettings):
     """Config for Client"""
 
     class Config:
         env_prefix = "OSRM_"
 
-    base_url: HttpUrl = "https://httpbin.org"
+    base_url: HttpUrl = HttpUrl("https://httpbin.org")
 
 
 # Define the client
