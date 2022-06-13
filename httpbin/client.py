@@ -41,8 +41,8 @@ class GetResponse(BaseModel):
 
     ## Explanation
     As a good habit, this client validates all responses with according to defined
-    models. It's a good strategy to only validate (and keep) only attributes which are going
-    to be consumed.
+    models. It's a good strategy to only validate (and keep) only attributes which
+    are going to be consumed.
 
     ## Example (this actual model)
     The return of httpbin.org/get looks like this:
@@ -59,7 +59,7 @@ class GetResponse(BaseModel):
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0",
+            "User-Agent": "Mozilla...1.0",
             "X-Amzn-Trace-Id": "Root=1-62a6f30f-2d2e73766ad7c838411b3e04"
         },
         "origin": "194.39.218.10",
