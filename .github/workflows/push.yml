@@ -1,3 +1,5 @@
+# Source: https://testdriven.io/tips/810f9bb5-c9df-479d-baa4-290c7e0779f1/
+
 name: Push
 on: [push]
 
@@ -27,27 +29,3 @@ jobs:
         run: poetry run black . --check
       - name: Run mypy
         run: poetry run mypy .
-  # test:
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       python-version: [3.9]
-  #       poetry-version: [1.1.2]
-  #       os: [ubuntu-latest, macOS-latest, windows-latest]
-  #   runs-on: ${{ matrix.os }}
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-python@v2
-  #       with:
-  #         python-version: ${{ matrix.python-version }}
-  #     - name: Run image
-  #       uses: abatilo/actions-poetry@v2.0.0
-  #       with:
-  #         poetry-version: ${{ matrix.poetry-version }}
-  #     - name: Install dependencies
-  #       run: poetry install
-  #     - name: Run tests
-  #       run: poetry run pytest -v
-  #     # - name: Upload coverage to Codecov
-  #     #   uses: codecov/codecov-action@v1
-  
