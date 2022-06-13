@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "client_template"
+name = "httpbin"
 version = "0.0.1"
-description = "A basic, modern python client for http communication"
+description = "A model-based python client for httpbin.org"
 authors = ["Jakob Kammerer <jakob.kammerer@gmail.com>"]
 
 [tool.poetry.dependencies]
