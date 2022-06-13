@@ -32,9 +32,9 @@ class Config(BaseSettings):
     """Config for Client"""
 
     class Config:
-        env_prefix = "OSRM_"
+        env_prefix = "HTTPBIN_"
 
-    base_url: HttpUrl = HttpUrl("https://httpbin.org")
+    base_url: str = "https://httpbin.org"
 
 
 # Define the client
