@@ -126,7 +126,7 @@ class Client:
         try:
             response.raise_for_status()
         except httpx.HTTPError as e:
-            StatusError(e)
+            raise StatusError(e)
 
         # Validate response data with model & return
         try:
