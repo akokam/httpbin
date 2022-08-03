@@ -1,4 +1,5 @@
 import httpx
+import ipaddress
 from pydantic import BaseModel, BaseSettings, ValidationError
 
 
@@ -69,7 +70,7 @@ class GetResponse(BaseModel):
     But we only want to validate and keep `origin`.
     """
 
-    origin: str
+    origin: ipaddress.IPv4Address
 
 
 # Define a configuration for the client
